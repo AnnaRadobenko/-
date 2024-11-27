@@ -5,7 +5,6 @@
   font-weight: 300;
   src: url("../fonts/poppins-v21-latin-300.woff2") format("woff2");
 }
-
 @font-face {
   font-display: swap;
   font-family: "Poppins";
@@ -13,7 +12,6 @@
   font-weight: 400;
   src: url("../fonts/poppins-v21-latin-regular.woff2") format("woff2");
 }
-
 @font-face {
   font-display: swap;
   font-family: "Poppins";
@@ -21,7 +19,6 @@
   font-weight: 600;
   src: url("../fonts/poppins-v21-latin-600.woff2") format("woff2");
 }
-
 @font-face {
   font-display: swap;
   font-family: "Poppins";
@@ -29,7 +26,6 @@
   font-weight: 900;
   src: url("../fonts/poppins-v21-latin-900.woff2") format("woff2");
 }
-
 :root {
   --color-primary-dark: #31261a;
   --color-primary-light: #faf4ea;
@@ -159,13 +155,7 @@ ul {
 /* Hero section */
 .hero-section {
   padding: 272px 0;
-  background-image: linear-gradient(
-      102.76deg,
-      rgba(18, 18, 17, 0.78) 2.03%,
-      rgba(18, 18, 17, 0.6) 58.46%,
-      rgba(18, 18, 17, 0) 90.36%
-    ),
-    url(../images/background-image.jpg);
+  background-image: linear-gradient(102.76deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url(../images/background-image.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -286,8 +276,7 @@ ul {
 
 .chef-photo {
   border-radius: 4px 4px 4px 200px;
-  box-shadow: -16px 16px 0 0 var(--color-primary-light),
-    -16px 16px 0 2px var(--color-secondary-dark);
+  box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-secondary-dark);
 }
 
 .chef-title {
@@ -323,12 +312,7 @@ ul {
 .format-card {
   height: 444px;
   padding: 24px;
-  background-image: linear-gradient(
-    180deg,
-    rgba(49, 38, 26, 0) 55.21%,
-    rgba(49, 38, 26, 0.71) 72.92%,
-    var(--color-primary-dark) 100%
-  );
+  background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark) 100%);
   border: 1px solid lightgray; /*remove*/
   border-radius: 16px;
   transition: transform 0.3s;
@@ -516,6 +500,7 @@ ul {
   position: relative;
   margin-bottom: 32px;
 }
+
 .form-label {
   position: absolute;
   top: 16px;
@@ -543,6 +528,10 @@ ul {
   line-height: 1.17;
 }
 
+.form-input:focus::-moz-placeholder {
+  color: var(--color-primary-dark);
+}
+
 .form-input:focus::placeholder {
   color: var(--color-primary-dark);
 }
@@ -564,4 +553,4 @@ ul {
 .form-terms-link {
   color: var(--color-primary-dark);
   text-underline-offset: 2px;
-}
+}/*# sourceMappingURL=main.css.map */
